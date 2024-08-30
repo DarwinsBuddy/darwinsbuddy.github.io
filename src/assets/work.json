@@ -1,0 +1,180 @@
+[
+  {
+    "id": 0,
+    "type": "employement",
+    "company": {
+      "logo": "/generali.jpg",
+      "name": "EA Generali Holding",
+      "location": "Vienna, Austria"
+    },
+    "department": null,
+    "jobTitle": "Intern",
+    "jobSubtitle": "IT-Intern in testing",
+    "years": "2005/2006",
+    "duration": "1 month each",
+    "achievements": null,
+    "projects": null,
+    "tech": ["SQL", "DB2", "WinRunner"]
+  },
+  {
+    "id": 1,
+    "type": "employement",
+    "company": {
+      "logo": "/wave_solutions.jpeg",
+      "name": "Wave Solutions / Bank Austria",
+      "location": "Vienna, Austria"
+    },
+    "department": null,
+    "jobTitle": "Software Developer",
+    "jobSubtitle": "Diploma project",
+    "years": "2006/2007",
+    "duration": "5 months",
+    "achievements": ["Development of a reporting tool for Bank Austria's SAS70 certification"],
+    "projects": null,
+    "tech": ["SQL", "DB2", "WinRunner"]
+  },
+  {
+    "id": 2,
+    "type": "employement",
+    "company": {
+      "logo": "/tu-wien.svg",
+      "name": "Technical University Vienna",
+      "location": "Vienna, Austria"
+    },
+    "department": "ADS Institute / Complang Institute",
+    "jobTitle": "Tutor",
+    "jobSubtitle": null,
+    "years": "2010 - 2013",
+    "duration": "3 years",
+    "achievements": null,
+    "projects": [
+      {
+        "name": "Algorithmics & Datastructures",
+        "description": "Assignment-groups/marking tests for Algorithmics lectures"
+      },
+      {
+        "name": "Functional Programming",
+        "description": "Consultation and plena for Functional programming Haskell"
+      },
+      {
+        "name": "Compiler Construction",
+        "description": "Consultation Compiler construction"
+      }
+    ],
+    "tech": ["bison", "yacc", "flex", "gcc", "C/C++"]
+  },
+  {
+    "id": 3,
+    "type": "self-employement",
+    "years": "2015 - 2016",
+    "duration": "1.5 years",
+    "title": "Self-Employeed",
+    "subTitle": "Software Development & Consulting",
+    "projects": [
+      {
+        "company": {
+          "logo": "/forlan_gmbh.jpeg",
+          "name": "forlan GmbH",
+          "location": "Vienna, Austria"
+        },
+        "name": "IP Videostreaming Application",
+        "description": "Developing an IP-Videostreaming solution, in C/C++ with gstreamer on SBC"
+      },
+      {
+        "company": {
+          "logo": "/kapsch.png",
+          "name": "Kapsch",
+          "location": "Vienna, Austria"
+        },
+        "name": "Protoyping",
+        "description": "Feasability-Study for a Videodrive Person-Tracking IoT-solution"
+      },
+      {
+        "company": {
+          "logo": "/company-placeholder.png",
+          "name": "Movatum GmbH",
+          "location": "Vienna, Austria"
+        },
+        "name": "Stocks engine",
+        "description": "Development of a web-platform for monitoring stocks incl. statistical R&D"
+      },
+      {
+        "company": {
+          "logo": "/oead.jpg",
+          "name": "OeAD GmbH",
+          "location": "Vienna, Austria"
+        },
+        "name": "Web Development",
+        "description": "Development of an innovative landing-page for EU-programmes"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "type": "employement",
+    "company": {
+      "logo": "/forlan_gmbh.jpeg",
+      "name": "forlan GmbH",
+      "location": "Vienna, Austria"
+    },
+    "department": "ADS Institute / Complang Institute",
+    "jobTitle": "Software Developer",
+    "jobSubtitle": null,
+    "years": "2015 - 2015",
+    "duration": "6 months",
+    "achievements": null,
+    "projects": [
+      {
+        "name": "Video Decoder",
+        "description": "C/C++ IP-Videostreaming-Software, Development, Deployment"
+      },
+      {
+        "name": "Smartlight",
+        "description": "Intelligent streetlights communicating in a mesh network, Product Owner, Development"
+      }
+    ],
+    "tech": ["C/C++", "Python", "gstreamer", "tornado", "numpy", "cmake", "PyCharm", "SQLite", "RaspberryPi", "HummingBoard"]
+  },
+  {
+    "id": 5,
+    "type": "employement",
+    "company": {
+      "logo": "/cvl.png",
+      "name": "CVL, Institute for Computer Aided-Automation",
+      "location": "Vienna, Austria"
+    },
+    "department": "Technical University of Vienna",
+    "jobTitle": "Scientific Project-Assistant",
+    "jobSubtitle": null,
+    "years": "2015 - 2018",
+    "duration": "2 years 7 months",
+    "achievements": ["CI", "Testing", "Monitoring", "Backup", "guidelines", "Tool-set development", "Development Workflow", "Release", "Performance-/Stress-/Penetration-Tests", "git-flow"],
+    "projects": [
+      {
+        "name": "fearless",
+        "description": "3D-sensor driven fall-detection system - Technical project lead, Server/Client Communication, Web-Front-/Backend, IoT, Deployment, Testing, etc."
+      },
+      {
+        "name": "wellbeing",
+        "description": "RGB/3D-sensor driven ergometric and stress recognition - R&D SVM emotion recognition"
+      },
+      {
+        "name": "The Profiler",
+        "description": "educational web-platform for data privacy awareness - Product owner, tech. project lead, R&D SVM emotion recognition, Web-Front-/Backend, Deployment, etc."
+      },
+      {
+        "name": "gAALaxy",
+        "description": "smart-home solution middleware for AAL solutions - Technical project lead, Web-Front-/Backend"
+      },
+      {
+        "name": "info@ourHouse",
+        "description": "gesture recognition for info screens - Design & UI, Deployment, etc."
+      },
+      {
+        "name": "Entertrain",
+        "description": "3D-sensor driven mobility-recognition system - Technical project lead, R&D SVM/CNN stand-up Recognition"
+      }
+    ],
+    "tech": ["OpenCV", "OpenNI", "scikit-learn", "numpy", "cherrypy", "locust", "Angular(JS)", "Bootstrap", "RxJS", "lodash", "HTML&CSS", "OpenBR", "PostgreSQL", "cmake", "CPack", "fogbugz", "git", "icinga/nagios", "Docker", "borg", "ionic", "gitlab", "CLion", "PyCharm", "Bash", "Python", "C/C++", "RaspberryPi", "odroid", "Asus Xtion", "Orbbec Astra", "Intel RealSense", "Kinect", "Ubuntu", "Debian", "raspbian", "Windows"]
+  }
+]

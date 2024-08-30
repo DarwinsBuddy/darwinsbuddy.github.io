@@ -8,8 +8,8 @@ export function Header() {
     <div className="header">
       <div className="portrait"></div>
       <div className="title-container">
-        <div className="title">DI Christoph Spörk, BSc, MSc</div>
-        <div className="sub-title">
+        <div className="header-title">DI Christoph Spörk, BSc, MSc</div>
+        <div className="header-sub-title">
           Product Owner | Data Scientist & Analyst | ML/AI Professional Lead
           Software Engineer | Technical Team Lead
         </div>

@@ -1,6 +1,6 @@
 import "./App.css";
 import { AboutMe } from "./components/AboutMe";
-import { CV } from "./components/CV";
+import { Work } from "./components/Work";
 import { Header } from "./components/Header";
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Header />
       <AboutMe />
-      <CV />
+      <Work />
     </div>
   );
 }

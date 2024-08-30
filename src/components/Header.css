@@ -19,11 +19,11 @@
     padding: 0.5rem;
 }
 
-.title {
+.header-title {
     font-size: x-large;
 }
 
-.sub-title {
+.header-sub-title {
     font-size: medium;
     word-wrap: break-word;
 }
