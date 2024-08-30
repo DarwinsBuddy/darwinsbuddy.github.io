@@ -1,0 +1,38 @@
+.header {
+  background-color: #000000;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    padding: 0.5rem;
+}
+
+.title {
+    font-size: x-large;
+}
+
+.sub-title {
+    font-size: medium;
+    word-wrap: break-word;
+}
+
+.portrait {
+    font-size: x-large;
+    margin: 0.5rem;
+    background: url('/picture.jpg') no-repeat;
+    background-size: contain;
+    min-height: 8rem;
+    min-width: 8rem;
+}
