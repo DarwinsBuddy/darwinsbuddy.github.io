@@ -1,0 +1,36 @@
+.logo {
+    min-width: 4.5rem;
+    min-height: 4.5rem;
+    margin-right: 0.5rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+
+.tag {
+  margin: 1.5px 1.5px;
+  background-color: #b4a3d7;
+  border-radius: 2px;
+  padding: 0.5px 2px;
+  font-size: 10pt;
+  color: black;
+  text-wrap: nowrap;
+}
+
+.achievement {
+  margin: 1.5px;
+  background-color: #dcdcdc;
+  border-radius: 2px;
+  font-size: 10pt; 
+  padding: 0.5px 2px;
+  color: black;
+}
+
+.activity {
+  margin: 1.5px;
+  background-color: #9eb4ff;
+  border-radius: 2px;
+  font-size: 11pt;
+  padding: 0.5px 2px;
+  color: black;
+}

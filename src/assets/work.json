@@ -148,7 +148,7 @@
     "jobSubtitle": null,
     "years": "2015 - 2018",
     "duration": "2 years 7 months",
-    "achievements": ["CI", "Testing", "Monitoring", "Backup", "guidelines", "Tool-set development", "Development Workflow", "Release", "Performance-/Stress-/Penetration-Tests", "git-flow"],
+    "scope": ["CI", "Testing", "Monitoring", "Backup", "guidelines", "Tool-set development", "Development Workflow", "Release", "Performance-/Stress-/Penetration-Tests", "git-flow"],
     "projects": [
       {
         "name": "fearless",
@@ -176,5 +176,31 @@
       }
     ],
     "tech": ["OpenCV", "OpenNI", "scikit-learn", "numpy", "cherrypy", "locust", "Angular(JS)", "Bootstrap", "RxJS", "lodash", "HTML&CSS", "OpenBR", "PostgreSQL", "cmake", "CPack", "fogbugz", "git", "icinga/nagios", "Docker", "borg", "ionic", "gitlab", "CLion", "PyCharm", "Bash", "Python", "C/C++", "RaspberryPi", "odroid", "Asus Xtion", "Orbbec Astra", "Intel RealSense", "Kinect", "Ubuntu", "Debian", "raspbian", "Windows"]
+  },
+  {
+    "id": 6,
+    "type": "employement",
+    "company": {
+      "logo": "/prewave.jpeg",
+      "name": "Prewave",
+      "location": "Vienna, Austria"
+    },
+    "department": "Technical University of Vienna",
+    "jobTitle": "Data Scientist | Software Architect | Lead Software Developer | QA | DevOps",
+    "jobSubtitle": null,
+    "years": "2018 - 2021",
+    "duration": "2 years 6 months",
+    "projects": [
+      {
+        "name": "Machine Learning / AI",
+        "description": "Data Aquisition / Sanitization, NLP, Quality Assurance, DevOps, etc."
+      },
+      {
+        "name": "Frontend Architecture | Web-Development",
+        "description": "Software Architect, DevOps, Technical Lead, Development, etc."
+      }
+    ],
+    "scope": ["CI", "Testing", "Team Lead", "Backup", "Maintaining guidelines", "Tool-set development", "Development Workflow", "Release Process", "git-flow", "SCRUM"],
+    "tech": ["Python", "Scala", "Spark", "Angular", "PostgreSQL", "GCloud", "Kubernetes"]
   }
 ]

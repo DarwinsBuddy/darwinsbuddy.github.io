@@ -1,0 +1,60 @@
+[
+  {
+    "id": 0,
+    "institute": {
+      "logo": "/st_ursula.png",
+      "name": "Elementary School, St. Ursula",
+      "location": "Vienna, Austria"
+    },
+    "degree": null,
+    "years": "1994 - 1998",
+    "description": "4 years elementary school"
+  },
+  {
+    "id": 1,
+    "institute": {
+      "logo": "/draschestrasse.png",
+      "name": "Realgymnasium, GRG23 Draschestrasse",
+      "location": "Vienna, Austria"
+    },
+    "degree": null,
+    "years": "1998 - 2002",
+    "description": "4 years secondary school with focus on natural science"
+  },
+  {
+    "id": 2,
+    "institute": {
+      "logo": "/spengergasse.png",
+      "name": "HTBLVA Spengergasse",
+      "location": "Vienna, Austria"
+    },
+    "degree": "IT & Organisation",
+    "info": "5 yrs. incl. matriculation",
+    "years": "2002 - 2007",
+    "description": "Programming, Logics, Algorithmics, Project-Management, RDBMS, etc. Specialization: Network Engineering, Cisco CCNA, AI, Microcontrollers Diploma project: WAVE Solutions, SAS70 certification, Reporting Tool, Java, ASP.NET"
+  },
+  {
+    "id": 3,
+    "institute": {
+      "logo": "/tu-wien.svg",
+      "name": "Technical University of Vienna",
+      "location": "Vienna, Austria"
+    },
+    "degree": "BSc, Software & Information Engineering",
+    "info": null,
+    "years": "2007 - 2011",
+    "description": "Programming, Software-Project-Management, Logics, Statistics, Optimization Algorithms, Algorithmics, etc. Bachelor thesis topic: Heuristical Optimization of the DC-Steiner-Tree Problem"
+  },
+  {
+    "id": 4,
+    "institute": {
+      "logo": "/tu-wien.svg",
+      "name": "Technical University of Vienna",
+      "location": "Vienna, Austria"
+    },
+    "degree": "MSc, Computational Intelligence",
+    "info": null,
+    "years": "2011 - 2015",
+    "description": "Mathematical Logics, AI, Machine-Learning, Statistics, Analysis, Theoretical Computer Science, Mathematics, etc. Master thesis: Algorithms for Quantified Cut-Introduction"
+  }
+]

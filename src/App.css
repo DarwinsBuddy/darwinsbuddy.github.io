@@ -5,12 +5,14 @@
 }
 .App {
   background: #ffffff;
-  height: 100vh;
+  height: 100%;
+  background-color: #1d1b1b;
 }
 .container {
   margin: 0px auto;
   display: flex;
   padding: 10px;
+  flex-wrap: wrap;
 }
 .container .card {
   background-color: hsl(197, 8%, 34%);
@@ -19,21 +21,38 @@
   border-radius: 2px;
   font-size: 10px;
   color: #e0dddd;
-}
-.container .card img {
-  width: 100%;
+  flex-grow: 1;
+  flex-basis: 35rem;
 }
 
-p {
-  text-wrap:wrap;
-  line-break: strict;
-  font-size: 0.75rem;
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
 }
 
 .nowrap {
   text-wrap: nowrap;
 }
 
-.font-s {
-  font-size: smaller;
+.section {
+  padding: 0 2px 2px 0;
+  width: 100%;
+}
+
+.section h4 {
+  color:rgb(150, 150, 150)
+}
+
+.m-1 {
+  margin: 2px 0;
 }
