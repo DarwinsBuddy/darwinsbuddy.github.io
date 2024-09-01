@@ -6,7 +6,7 @@
   flex-direction: row;
   position: sticky;
   top: 0;
-  box-shadow: 0px 0px 10px 40px rgba(0,0,0,0.85);
+  box-shadow: 0px 0px 10px 40px rgba(0,0,0,1);
 }
 .persona {
   display: flex;
