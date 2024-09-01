@@ -89,7 +89,7 @@ function renderScope(scope?: string[]) {
   if (scope) {
     return (
       <div className="section">
-        <hr className="m-1" />
+        <hr className="m-1 smooth" />
         <h4>
           <FontAwesomeIcon icon={faPeopleRoof} /> Scope of Activities
         </h4>
@@ -111,7 +111,7 @@ function renderAchievements(achievements?: string[]) {
   if (achievements) {
     return (
       <div className="section">
-        <hr className="m-1" />
+        <hr className="m-1 smooth" />
         <h4>
           <FontAwesomeIcon icon={faMedal} /> Achievements
         </h4>
@@ -131,7 +131,7 @@ function renderTech(tech?: string[]) {
   if (tech) {
     return (
       <div className="section">
-        <hr className="m-1" />
+        <hr className="m-1 smooth" />
         <h4>
           <FontAwesomeIcon icon={faMicrochip} /> Technology
         </h4>
