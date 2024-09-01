@@ -8,6 +8,11 @@
   height: 100%;
   background-color: #1d1b1b;
 }
+
+.content {
+  margin: 20px 0;
+}
+
 .container {
   margin: 0px auto;
   display: flex;

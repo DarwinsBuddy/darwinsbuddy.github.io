@@ -1,7 +1,11 @@
 import "./Work.css";
 import workData from "../assets/work.json";
-import { renderAchievement, renderLogo, renderTag } from "./utils";
-import { faMedal, faMicrochip, faPeopleRoof } from "@fortawesome/free-solid-svg-icons";
+import { renderAchievement, renderIf, renderLogo, renderTag } from "./utils";
+import {
+  faMedal,
+  faMicrochip,
+  faPeopleRoof,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const data: Work[] = workData;
@@ -15,12 +19,14 @@ type Company = {
   logo: string;
   name: string;
   location: string;
+  link: string;
 };
 
 type Project = {
   company?: Company;
   name: string;
   description: string;
+  link: string;
 };
 
 type Employement = {
@@ -67,10 +73,12 @@ function renderProjects(projects: null | Project[], logoSize = "6rem") {
       <div className="projects">
         {projects.map((p: Project, i: number) => (
           <div className="project" key={`project-${i}.${p.name}`}>
-            <div className="side">{renderLogo(p.company?.logo, logoSize)}</div>
+            <div className="side">
+              {renderLogo(p.company?.logo, p.link, logoSize)}
+            </div>
             <div className="side">
               <p>
-                <b>{p.name}</b>
+                {renderIf(() => p.link, () => <a href={p.link} target="_blank"><b>{p.name}</b></a>, () => <b>{p.name}</b>)}
               </p>
               <p>{p.description}</p>
             </div>
@@ -88,7 +96,9 @@ function renderScope(scope: string[]) {
     return (
       <div className="section">
         <hr className="m-1" />
-        <h4><FontAwesomeIcon icon={faPeopleRoof} /> Scope of Activities</h4>
+        <h4>
+          <FontAwesomeIcon icon={faPeopleRoof} /> Scope of Activities
+        </h4>
         <div className="scope-of-activities">
           {scope.map((s: string, i: number) => (
             <div className="activity" key={`activity-${i}.${s}`}>
@@ -105,13 +115,16 @@ function renderScope(scope: string[]) {
 
 function renderAchievements(achievements: string[]) {
   if (achievements != null) {
-    // TODO box this?
     return (
       <div className="section">
         <hr className="m-1" />
-        <h4><FontAwesomeIcon icon={faMedal} /> Achievements</h4>
+        <h4>
+          <FontAwesomeIcon icon={faMedal} /> Achievements
+        </h4>
         <div className="achievements">
-          {achievements.map((a: string, i: number) => renderAchievement(a, `${i}`))}
+          {achievements.map((a: string, i: number) =>
+            renderAchievement(a, `${i}`)
+          )}
         </div>
       </div>
     );
@@ -122,11 +135,12 @@ function renderAchievements(achievements: string[]) {
 
 function renderTech(tech: string[]) {
   if (tech != null) {
-    // TODO box this?
     return (
       <div className="section">
         <hr className="m-1" />
-        <h4><FontAwesomeIcon icon={faMicrochip} /> Technology</h4>
+        <h4>
+          <FontAwesomeIcon icon={faMicrochip} /> Technology
+        </h4>
         <div className="tech">
           {tech.map((t: string, i: number) => renderTag(t, `${i}`))}
         </div>
@@ -143,12 +157,7 @@ function renderWork(work: Work): JSX.Element {
       <div className="card col" key={work.id}>
         <div className="row">
           <div className="col">
-            <div
-              className="logo"
-              style={{
-                backgroundImage: `url('${work.company.logo}')`,
-              }}
-            ></div>
+            {renderLogo(work.company.logo, work.company.link, "4.5rem")}
             <div className="time">
               <p>{work.years}</p>
               <p>{work.duration}</p>
@@ -194,10 +203,15 @@ function renderWork(work: Work): JSX.Element {
 
 export function Work() {
   return (
-    <div className="container">
-      {data
-        .sort((a: Work, b: Work) => b.id - a.id)
-        .map((w: Work) => renderWork(w))}
+    <div className="col">
+      <div className="container">
+        <h3>Work Experience</h3>
+      </div>
+      <div className="container">
+        {data
+          .sort((a: Work, b: Work) => b.id - a.id)
+          .map((w: Work) => renderWork(w))}
+      </div>
     </div>
   );
 }

@@ -4,6 +4,11 @@
   align-items: start;
 }
 
+.time {
+  padding: 0.125rem 0.125rem;
+  max-width: 5rem
+}
+
 .time > p {
   font-size: 9pt;
 }

@@ -5,7 +5,8 @@
     "company": {
       "logo": "/generali.jpg",
       "name": "EA Generali Holding",
-      "location": "Vienna, Austria"
+      "location": "Vienna, Austria",
+      "link": "https://www.generalicee.com/"
     },
     "department": null,
     "jobTitle": "Intern",
@@ -30,8 +31,7 @@
     "years": "2006/2007",
     "duration": "5 months",
     "achievements": ["Development of a reporting tool for Bank Austria's SAS70 certification"],
-    "projects": null,
-    "tech": ["SQL", "DB2", "WinRunner"]
+    "projects": null
   },
   {
     "id": 2,
@@ -39,7 +39,8 @@
     "company": {
       "logo": "/tu-wien.svg",
       "name": "Technical University Vienna",
-      "location": "Vienna, Austria"
+      "location": "Vienna, Austria",
+      "link": "https://www.tuwien.at/en/tu-wien"
     },
     "department": "ADS Institute / Complang Institute",
     "jobTitle": "Tutor",
@@ -75,7 +76,8 @@
         "company": {
           "logo": "/forlan_gmbh.jpeg",
           "name": "forlan GmbH",
-          "location": "Vienna, Austria"
+          "location": "Vienna, Austria",
+          "link": "https://saimos.de/en/"
         },
         "name": "IP Videostreaming Application",
         "description": "Developing an IP-Videostreaming solution, in C/C++ with gstreamer on SBC"
@@ -84,7 +86,8 @@
         "company": {
           "logo": "/kapsch.png",
           "name": "Kapsch",
-          "location": "Vienna, Austria"
+          "location": "Vienna, Austria",
+          "link": "https://www.kapsch.net/en"
         },
         "name": "Protoyping",
         "description": "Feasability-Study for a Videodrive Person-Tracking IoT-solution"
@@ -102,7 +105,8 @@
         "company": {
           "logo": "/oead.jpg",
           "name": "OeAD GmbH",
-          "location": "Vienna, Austria"
+          "location": "Vienna, Austria",
+          "link": "https://oead.at/en/"
         },
         "name": "Web Development",
         "description": "Development of an innovative landing-page for EU-programmes"
@@ -115,7 +119,8 @@
     "company": {
       "logo": "/forlan_gmbh.jpeg",
       "name": "forlan GmbH",
-      "location": "Vienna, Austria"
+      "location": "Vienna, Austria",
+      "link": "https://saimos.de/en/"
     },
     "department": "ADS Institute / Complang Institute",
     "jobTitle": "Software Developer",
@@ -133,6 +138,7 @@
         "description": "Intelligent streetlights communicating in a mesh network, Product Owner, Development"
       }
     ],
+    "scope": ["Development", "Solution Design", "Testing"],
     "tech": ["C/C++", "Python", "gstreamer", "tornado", "numpy", "cmake", "PyCharm", "SQLite", "RaspberryPi", "HummingBoard"]
   },
   {
@@ -141,40 +147,47 @@
     "company": {
       "logo": "/cvl.png",
       "name": "CVL, Institute for Computer Aided-Automation",
-      "location": "Vienna, Austria"
+      "location": "Vienna, Austria",
+      "link": "https://cvl.tuwien.ac.at/"
     },
     "department": "Technical University of Vienna",
     "jobTitle": "Scientific Project-Assistant",
     "jobSubtitle": null,
     "years": "2015 - 2018",
     "duration": "2 years 7 months",
-    "scope": ["CI", "Testing", "Monitoring", "Backup", "guidelines", "Tool-set development", "Development Workflow", "Release", "Performance-/Stress-/Penetration-Tests", "git-flow"],
     "projects": [
       {
         "name": "fearless",
+        "link": "https://cogvis.ai/produkt/",
         "description": "3D-sensor driven fall-detection system - Technical project lead, Server/Client Communication, Web-Front-/Backend, IoT, Deployment, Testing, etc."
       },
       {
         "name": "wellbeing",
-        "description": "RGB/3D-sensor driven ergometric and stress recognition - R&D SVM emotion recognition"
+        "description": "RGB/3D-sensor driven ergometric and stress recognition - R&D SVM emotion recognition",
+        "link": "https://cvl.tuwien.ac.at/project/wellbeing/"
       },
       {
         "name": "The Profiler",
-        "description": "educational web-platform for data privacy awareness - Product owner, tech. project lead, R&D SVM emotion recognition, Web-Front-/Backend, Deployment, etc."
+        "description": "educational web-platform for data privacy awareness - Product owner, tech. project lead, R&D SVM emotion recognition, Web-Front-/Backend, Deployment, etc.",
+        "link": "https://cvl.tuwien.ac.at/project/the-profiler/"
       },
       {
         "name": "gAALaxy",
-        "description": "smart-home solution middleware for AAL solutions - Technical project lead, Web-Front-/Backend"
+        "description": "smart-home solution middleware for AAL solutions - Technical project lead, Web-Front-/Backend",
+        "link": "https://www.gaalaxy.eu/pi/cogvis/"
       },
       {
-        "name": "info@ourHouse",
-        "description": "gesture recognition for info screens - Design & UI, Deployment, etc."
+        "name": "infos@ourHouse",
+        "description": "gesture recognition for info screens - Design & UI, Deployment, etc.",
+        "link": "https://cvl.tuwien.ac.at/project/infosourhouse/"
       },
       {
         "name": "Entertrain",
-        "description": "3D-sensor driven mobility-recognition system - Technical project lead, R&D SVM/CNN stand-up Recognition"
+        "description": "3D-sensor driven mobility-recognition system - Technical project lead, R&D SVM/CNN stand-up Recognition",
+        "link": "https://cvl.tuwien.ac.at/project/entertrain/"
       }
     ],
+    "scope": ["Development", "Solution Design", "CI", "Testing", "Monitoring", "Backup", "guidelines", "Tool-set development", "Development Workflow", "Release", "Performance-Tests", "git-flow"],
     "tech": ["OpenCV", "OpenNI", "scikit-learn", "numpy", "cherrypy", "locust", "Angular(JS)", "Bootstrap", "RxJS", "lodash", "HTML&CSS", "OpenBR", "PostgreSQL", "cmake", "CPack", "fogbugz", "git", "icinga/nagios", "Docker", "borg", "ionic", "gitlab", "CLion", "PyCharm", "Bash", "Python", "C/C++", "RaspberryPi", "odroid", "Asus Xtion", "Orbbec Astra", "Intel RealSense", "Kinect", "Ubuntu", "Debian", "raspbian", "Windows"]
   },
   {
@@ -183,7 +196,8 @@
     "company": {
       "logo": "/prewave.jpeg",
       "name": "Prewave",
-      "location": "Vienna, Austria"
+      "location": "Vienna, Austria",
+      "link": "https://www.prewave.com/"
     },
     "department": "Technical University of Vienna",
     "jobTitle": "Data Scientist | Software Architect | Lead Software Developer | QA | DevOps",
@@ -200,7 +214,142 @@
         "description": "Software Architect, DevOps, Technical Lead, Development, etc."
       }
     ],
-    "scope": ["CI", "Testing", "Team Lead", "Backup", "Maintaining guidelines", "Tool-set development", "Development Workflow", "Release Process", "git-flow", "SCRUM"],
-    "tech": ["Python", "Scala", "Spark", "Angular", "PostgreSQL", "GCloud", "Kubernetes"]
+    "scope": ["Development", "CI", "Testing", "Team Leadership", "Backup Strategy", "Coding Guidelines", "Toolset Development", "Development Workflow", "Release Process", "Agile"],
+    "tech": ["Python", "Scala", "Spark", "Angular", "PostgreSQL", "GCP", "Kubernetes", "Clean Coding", "Mathematical Modelling", "git-flow", "JIRA", "Typescript"]
+  },
+  {
+    "id": 7,
+    "type": "employement",
+    "company": {
+      "logo": "/5g.jpeg",
+      "name": "5G Systems",
+      "location": "Vienna, Austria"
+    },
+    "department": "Player Access Management",
+    "jobTitle": "Senior Software Engineer",
+    "jobSubtitle": null,
+    "years": "2021 - 2022",
+    "duration": "1 year 9 months",
+    "projects": [
+      {
+        "name": "Player Exclusion",
+        "description": "Developing a generic, event-driven solution to enable responsible gaming in various jurisdictions and markets"
+      },
+      {
+        "name": "Platform Engineering",
+        "description": "Promoting quality in coding and leading by example. Owning technical solutions e2e. Encouraging people to foster a positive error-culture. Driving a platform serving the US market in real-money sports betting and iGaming. Introducing coding guidelines, best practices and offering a collaborative way to implement."
+      },
+      {
+        "name": "foosball",
+        "description": "As a side project developing/extending a full stack solution for goal tracking of a company-wide used foosball table. Enabled by this doing yearly statistical analysis on employees performance in foosball to boost confidence and promote healthy breaks and an inviting work atmosphere."
+      }
+    ],
+    "scope": ["Development", "CI", "Testing", "Root Cause Analaysis", "Interpersonal Communication", "Research", "Solution Design", "Clean Coding", "Release Process", "Rapid"],
+    "tech": ["Python", "Java", "Docker", "Podman", "Angular", "MongoDB", "AWS", "Vert.x", "Typescript", "Nomad", "Consul", "RxJava", "Apache Ignite", "Microservices"]
+  },
+  {
+    "id": 8,
+    "type": "employement",
+    "company": {
+      "logo": "/tipico_us.jpeg",
+      "name": "Tipico North America",
+      "location": "Denver, Colorado",
+      "link": "https://www.tipico-group.com/en/tipico-usa-technology/"
+    },
+    "department": "Marketing & Technology",
+    "jobTitle": "Technical Lead of Marketing & Technology",
+    "jobSubtitle": null,
+    "years": "2022 - 2023",
+    "duration": "1 year 3 months",
+    "projects": [
+      {
+        "name": "Technical Product Support & Consultancy",
+        "description": "Driving extension and development of highly configurable software products in the area of Bonus & Promotions and Marketing in the real money / iGaming industry. Working closely with V- and C-level executives to deliver sustainable business value, while focussing on improvement of KPIs. Supporting and shaping an OKR process to facilitate mentioned deliverables in a business-driven decision making process, by collaborating across international and diverse teams. Consultancy on tech- and product-driven solutions."
+      }
+    ],
+    "scope": ["Technology Management", "Tehcnical Project Leadership", "Solution Architecture", "Product Development", "Product Management"]
+  },
+  {
+    "id": 9,
+    "type": "employement",
+    "company": {
+      "logo": "/5g.jpeg",
+      "name": "5G Systems",
+      "location": "Vienna, Austria",
+      "link": "https://5gsystems.com"
+    },
+    "department": "Bonus & Promotions",
+    "jobTitle": "Technical Lead | Solution Architect",
+    "jobSubtitle": null,
+    "years": "2022 - 2023",
+    "duration": "1 year 4 months",
+    "projects": [
+      {
+        "name": "Technical Lead",
+        "description": "Software Architecture and Development of a feature-rich, product-agnostic Bonus & Promotions engine serving the US market on multiple jurisdications. Consulting on and supporting optimization processes in organisational, operational and administrative key areas to increase efficency and well-being. Closely working with C-level to align on focus, vision and purpose of business-driven changes. Focussing on quality, on-time delivery and sustainable, flexible and easily extensible software solutions."
+      },
+      {
+        "name": "Solution Architect",
+        "description": "Onboarding and mentoring 5+ people on the event-driven, highly available tech stack, by leading by example. Technically leading business driven initiatives to extend and change said Bonus & Promotion engine to increase business value and achieve key results. Collaborating across an international and diverse team."
+      }
+    ],
+    "scope": ["Development", "CI", "Testing", "Root Cause Analaysis", "Interpersonal Communication", "Research", "Solution Design", "Clean Coding", "Release Process", "Mathematical Modelling", "Rapid"],
+    "tech": ["Python", "Java", "Docker", "Podman", "Grafana", "Prometheus", "Angular", "MongoDB", "AWS", "Vert.x", "Typescript", "Nomad", "Consul", "RxJava", "Apache Ignite", "Microservices"]
+  },
+  {
+    "id": 10,
+    "type": "employement",
+    "company": {
+      "logo": "/tipico_us.jpeg",
+      "name": "Tipico North America",
+      "location": "Denver, Colorado",
+      "link": "https://www.tipico-group.com/en/tipico-usa-technology/"
+    },
+    "department": "Marketing & Technology",
+    "jobTitle": "Technical Product Manager",
+    "jobSubtitle": null,
+    "years": "2023 - 2024",
+    "duration": "1 year",
+    "projects": [
+      {
+        "name": "Tipico Rewards",
+        "link": "https://tinyurl.com/Tipico-Rewards",
+        "description": "Designing and implementing an industry defining product for real-time event-driven bonusing."
+      },
+      {
+        "name": "Product Management",
+        "description": "Closing the gap between product and tech by innovative, solution-oriented thinking and communicating throughout all contributing parties to ensure a highly qualitative customer experience end-to-end. Technically leading business driven initiatives to extend and change said Bonus & Promotion engine to increase business value and achieve key results. Collaborating across an international and diverse team. Consulting on and supporting optimization processes in organisational, operational and administrative key areas to increase efficiency and well-being. Closely working with C-level to align on focus, vision and purpose of business-driven changes."
+      }
+    ],
+    "achievements": ["Launching a product reacting real-time on user behaviour for increasing customer engagement and drop customer support inquiries by 98%"],
+    "scope": ["Technology Management", "Tehcnical Project Leadership", "Solution Architecture", "Product Development", "Product Management"]
+  },
+  {
+    "id": 11,
+    "type": "employement",
+    "company": {
+      "logo": "/5g.jpeg",
+      "name": "5G Systems",
+      "location": "Vienna, Austria",
+      "link": "https://5gsystems.com"
+    },
+    "department": "Bonus & Promotions",
+    "jobTitle": "Technical Team Lead | Solution Architect",
+    "jobSubtitle": null,
+    "years": "2023 - present",
+    "duration": "1 year 4 months",
+    "projects": [
+      {
+        "name": "Team Lead",
+        "description": "Leading by example and supporting a highly skilled, solution-oriented team to drive and extend a real-time event-driven bonus engine. Deeply caring for the people working for ensuring a healthy work environment, by out of the box thinking and taking direct action. Onboarding and mentoring people within, as well as outside of the team, to enable the full potential of people's talents. Emphasizing the necessity for quality and stability to ensure high availability and in-time delivery of features and results. Working closely with C-level and stakeholders to keep focus on long-/mid-term business goals and strategical change."
+      },
+      {
+        "name": "Solution Architect",
+        "description": "Developing features and contributing to the overall goal to keep being engaged and aware of changes in quality or direction."
+      }
+    ],
+    "achievements": ["Launching a product reacting real-time on user behaviour for increasing customer engagement and drop customer support inquiries by 98%"],
+    "scope": ["Development", "CI", "Testing", "Root Cause Analaysis", "Interpersonal Communication", "Research", "Solution Design", "Clean Coding", "Release Process", "Mathematical Modelling", "Rapid"],
+    "tech": ["Python", "Java", "Docker", "Podman", "Grafana", "Prometheus", "Angular", "MongoDB", "AWS", "Vert.x", "Typescript", "Nomad", "Consul", "RxJava", "Apache Ignite", "Microservices"]
   }
 ]

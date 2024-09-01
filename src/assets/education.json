@@ -4,7 +4,8 @@
     "institute": {
       "logo": "/st_ursula.png",
       "name": "Elementary School, St. Ursula",
-      "location": "Vienna, Austria"
+      "location": "Vienna, Austria",
+      "link": "https://st-ursula-wien.at/"
     },
     "degree": null,
     "years": "1994 - 1998",
@@ -15,7 +16,8 @@
     "institute": {
       "logo": "/draschestrasse.png",
       "name": "Realgymnasium, GRG23 Draschestrasse",
-      "location": "Vienna, Austria"
+      "location": "Vienna, Austria",
+      "link": "https://www.grg23vbs.ac.at/"
     },
     "degree": null,
     "years": "1998 - 2002",
@@ -26,7 +28,8 @@
     "institute": {
       "logo": "/spengergasse.png",
       "name": "HTBLVA Spengergasse",
-      "location": "Vienna, Austria"
+      "location": "Vienna, Austria",
+      "link": "https://www.spengergasse.at/"
     },
     "degree": "IT & Organisation",
     "info": "5 yrs. incl. matriculation",
@@ -38,7 +41,8 @@
     "institute": {
       "logo": "/tu-wien.svg",
       "name": "Technical University of Vienna",
-      "location": "Vienna, Austria"
+      "location": "Vienna, Austria",
+      "link": "https://www.tuwien.at/en/tu-wien"
     },
     "degree": "BSc, Software & Information Engineering",
     "info": null,
@@ -50,7 +54,8 @@
     "institute": {
       "logo": "/tu-wien.svg",
       "name": "Technical University of Vienna",
-      "location": "Vienna, Austria"
+      "location": "Vienna, Austria",
+      "link": "https://www.tuwien.at/en/tu-wien"
     },
     "degree": "MSc, Computational Intelligence",
     "info": null,

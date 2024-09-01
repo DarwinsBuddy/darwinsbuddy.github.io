@@ -1,19 +1,40 @@
 import "./utils.css";
 
-export function renderLogo(logo?: string, size: string = "4.5rem") {
+export function renderLogo(
+  logo?: string,
+  link?: string,
+  size: string = "3.5rem"
+) {
   if (logo) {
+    function _logo() {
+      return (
+        <div
+          className="logo"
+          style={{
+            backgroundImage: `url('${logo}')`,
+            minWidth: size,
+            minHeight: size,
+          }}
+        ></div>
+      );
+    }
     return (
-      <div
-        className="logo"
-        style={{
-          backgroundImage: `url('${logo}')`,
-          minWidth: size,
-          minHeight: size,
-        }}
-      ></div>
+      <div className="logo-container">
+        {renderIf(() => link, 
+        () =><a href={link} target="_blank">{_logo()}</a>,
+        _logo)}
+      </div>
     );
   } else {
     return <></>;
+  }
+}
+
+export function renderIf(predicate: () => any, thenRender: () => any, elseRender: () => any) {
+  if (predicate()) {
+    return thenRender();
+  } else {
+    return elseRender();
   }
 }
 
