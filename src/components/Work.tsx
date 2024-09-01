@@ -19,45 +19,39 @@ type Company = {
   logo: string;
   name: string;
   location: string;
-  link: string;
+  link?: string;
 };
 
 type Project = {
   company?: Company;
   name: string;
   description: string;
-  link: string;
+  link?: string;
 };
 
-type Employement = {
+interface Work {
   id: number;
-  type: WorkType.Employement;
-  company: Company;
-  department: string;
-  jobTitle: string;
-  jobSubtitle: string;
+  type: WorkType.Employement | string;
+  tech?: string[];
   years: string;
   duration: string;
-  achievements: string[];
-  scope: string[];
-  projects: Project[];
-  tech: string[];
+  achievements?: string[];
+  projects?: Project[];
+}
+
+interface Employement extends Work {
+  company: Company;
+  department?: string;
+  jobTitle: string;
+  jobSubtitle?: string;
+  scope?: string[];
 };
 
-type SelfEmployement = {
-  id: number;
-  type: WorkType.SelfEmployement;
+interface SelfEmployement extends Work {
   title: string;
   subTitle: string;
   companies: Company[];
-  years: string;
-  duration: string;
-  achievements: string[];
-  projects: Project[];
-  tech: string[];
 };
-
-type Work = Employement | SelfEmployement;
 
 function isEmployement(work: Work): work is Employement {
   return (work as Employement).type === WorkType.Employement;
@@ -67,7 +61,7 @@ function isSelfEmployement(work: Work): work is SelfEmployement {
   return (work as SelfEmployement).type === WorkType.SelfEmployement;
 }
 
-function renderProjects(projects: null | Project[], logoSize = "6rem") {
+function renderProjects(projects?: Project[], logoSize = "6rem") {
   if (projects) {
     return (
       <div className="projects">
@@ -91,8 +85,8 @@ function renderProjects(projects: null | Project[], logoSize = "6rem") {
   }
 }
 
-function renderScope(scope: string[]) {
-  if (scope != null) {
+function renderScope(scope?: string[]) {
+  if (scope) {
     return (
       <div className="section">
         <hr className="m-1" />
@@ -113,8 +107,8 @@ function renderScope(scope: string[]) {
   }
 }
 
-function renderAchievements(achievements: string[]) {
-  if (achievements != null) {
+function renderAchievements(achievements?: string[]) {
+  if (achievements) {
     return (
       <div className="section">
         <hr className="m-1" />
@@ -133,8 +127,8 @@ function renderAchievements(achievements: string[]) {
   }
 }
 
-function renderTech(tech: string[]) {
-  if (tech != null) {
+function renderTech(tech?: string[]) {
+  if (tech) {
     return (
       <div className="section">
         <hr className="m-1" />

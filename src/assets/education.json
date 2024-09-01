@@ -7,7 +7,6 @@
       "location": "Vienna, Austria",
       "link": "https://st-ursula-wien.at/"
     },
-    "degree": null,
     "years": "1994 - 1998",
     "description": "4 years elementary school"
   },
@@ -19,7 +18,6 @@
       "location": "Vienna, Austria",
       "link": "https://www.grg23vbs.ac.at/"
     },
-    "degree": null,
     "years": "1998 - 2002",
     "description": "4 years secondary school with focus on natural science"
   },
@@ -45,7 +43,6 @@
       "link": "https://www.tuwien.at/en/tu-wien"
     },
     "degree": "BSc, Software & Information Engineering",
-    "info": null,
     "years": "2007 - 2011",
     "description": "Programming, Software-Project-Management, Logics, Statistics, Optimization Algorithms, Algorithmics, etc. Bachelor thesis topic: Heuristical Optimization of the DC-Steiner-Tree Problem"
   },
@@ -58,7 +55,6 @@
       "link": "https://www.tuwien.at/en/tu-wien"
     },
     "degree": "MSc, Computational Intelligence",
-    "info": null,
     "years": "2011 - 2015",
     "description": "Mathematical Logics, AI, Machine-Learning, Statistics, Analysis, Theoretical Computer Science, Mathematics, etc. Master thesis: Algorithms for Quantified Cut-Introduction"
   }

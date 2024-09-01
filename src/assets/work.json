@@ -8,13 +8,10 @@
       "location": "Vienna, Austria",
       "link": "https://www.generalicee.com/"
     },
-    "department": null,
     "jobTitle": "Intern",
     "jobSubtitle": "IT-Intern in testing",
     "years": "2005/2006",
     "duration": "1 month each",
-    "achievements": null,
-    "projects": null,
     "tech": ["SQL", "DB2", "WinRunner"]
   },
   {
@@ -25,13 +22,11 @@
       "name": "Wave Solutions / Bank Austria",
       "location": "Vienna, Austria"
     },
-    "department": null,
     "jobTitle": "Software Developer",
     "jobSubtitle": "Diploma project",
     "years": "2006/2007",
     "duration": "5 months",
     "achievements": ["Development of a reporting tool for Bank Austria's SAS70 certification"],
-    "projects": null
   },
   {
     "id": 2,
@@ -44,10 +39,8 @@
     },
     "department": "ADS Institute / Complang Institute",
     "jobTitle": "Tutor",
-    "jobSubtitle": null,
     "years": "2010 - 2013",
     "duration": "3 years",
-    "achievements": null,
     "projects": [
       {
         "name": "Algorithmics & Datastructures",
@@ -124,10 +117,8 @@
     },
     "department": "ADS Institute / Complang Institute",
     "jobTitle": "Software Developer",
-    "jobSubtitle": null,
     "years": "2015 - 2015",
     "duration": "6 months",
-    "achievements": null,
     "projects": [
       {
         "name": "Video Decoder",
@@ -152,7 +143,6 @@
     },
     "department": "Technical University of Vienna",
     "jobTitle": "Scientific Project-Assistant",
-    "jobSubtitle": null,
     "years": "2015 - 2018",
     "duration": "2 years 7 months",
     "projects": [
@@ -201,7 +191,6 @@
     },
     "department": "Technical University of Vienna",
     "jobTitle": "Data Scientist | Software Architect | Lead Software Developer | QA | DevOps",
-    "jobSubtitle": null,
     "years": "2018 - 2021",
     "duration": "2 years 6 months",
     "projects": [
@@ -227,7 +216,6 @@
     },
     "department": "Player Access Management",
     "jobTitle": "Senior Software Engineer",
-    "jobSubtitle": null,
     "years": "2021 - 2022",
     "duration": "1 year 9 months",
     "projects": [
@@ -258,7 +246,6 @@
     },
     "department": "Marketing & Technology",
     "jobTitle": "Technical Lead of Marketing & Technology",
-    "jobSubtitle": null,
     "years": "2022 - 2023",
     "duration": "1 year 3 months",
     "projects": [
@@ -280,7 +267,6 @@
     },
     "department": "Bonus & Promotions",
     "jobTitle": "Technical Lead | Solution Architect",
-    "jobSubtitle": null,
     "years": "2022 - 2023",
     "duration": "1 year 4 months",
     "projects": [
@@ -307,7 +293,6 @@
     },
     "department": "Marketing & Technology",
     "jobTitle": "Technical Product Manager",
-    "jobSubtitle": null,
     "years": "2023 - 2024",
     "duration": "1 year",
     "projects": [
@@ -335,7 +320,6 @@
     },
     "department": "Bonus & Promotions",
     "jobTitle": "Technical Team Lead | Solution Architect",
-    "jobSubtitle": null,
     "years": "2023 - present",
     "duration": "1 year 4 months",
     "projects": [

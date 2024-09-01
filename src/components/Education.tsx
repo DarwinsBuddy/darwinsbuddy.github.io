@@ -14,9 +14,9 @@ type Institute = {
 type Education = {
   id: number;
   institute: Institute;
-  degree: string;
+  degree?: string;
   description: string;
-  info: string;
+  info?: string;
   years: string;
 };
 
