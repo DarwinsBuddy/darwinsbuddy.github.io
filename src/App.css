@@ -20,7 +20,7 @@
   flex-wrap: wrap;
 }
 .container .card {
-  background-color: hsl(197, 8%, 34%);
+  background-color: var(--card-bg);
   margin: 10px;
   padding: 10px;
   border-radius: 2px;
@@ -28,7 +28,7 @@
   color: #e0dddd;
   flex-grow: 1;
   flex-basis: 35rem;
-  box-shadow: 0px 0px 3px 3px hsl(197, 8%, 34%);
+  box-shadow: 0px 0px 3px 3px var(--card-bg);
 }
 
 .row {
