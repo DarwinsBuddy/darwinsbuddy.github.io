@@ -1,4 +1,4 @@
-import aboutMeData from "../assets/aboutme.json";
+import aboutMeData from "../../assets/aboutme.json";
 type AboutMe = {
   free: number;
   hard: string;

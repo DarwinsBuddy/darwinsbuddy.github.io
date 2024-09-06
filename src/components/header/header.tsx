@@ -1,4 +1,4 @@
-import "./Header.css";
+import "./header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -14,15 +14,20 @@ export function Header() {
             Product Owner | Data Scientist & Analyst | ML/AI Professional Lead
             Software Engineer | Technical Team Lead
           </div>
+          {
+            /*<div className="input-container">
+              <SearchBox></SearchBox>
+            </div>*/
+          }
         </div>
       </div>
-      <div className="contact row">
-        <div className="col">
+      <div className="contact-container row">
+        <div className="address col">
           <h4>Address</h4>
           <p className="nowrap">Fontanastrasse 1 / 4 / 18</p>
           <p className="nowrap">1100 Vienna, Austria</p>
         </div>
-        <div className="col">
+        <div className="contact col">
           <h4>Contact</h4>
           <p className="nowrap">
             <FontAwesomeIcon icon={faEnvelope} />{" "}

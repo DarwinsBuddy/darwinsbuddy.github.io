@@ -26,7 +26,8 @@
     "jobSubtitle": "Diploma project",
     "years": "2006/2007",
     "duration": "5 months",
-    "achievements": ["Release of a reporting tool for Bank Austria's SAS70 certification"]
+    "achievements": ["Release of a reporting tool for Bank Austria's SAS70 certification"],
+    "tech": ["Java", "SQL", ".NET"]
   },
   {
     "id": 2,

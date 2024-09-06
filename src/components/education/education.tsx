@@ -1,6 +1,6 @@
-import "./Education.css";
-import educationData from "../assets/education.json";
-import { renderLogo } from "./utils";
+import "./education.css";
+import educationData from "../../assets/education.json";
+import { renderLogo } from "../utils";
 
 const data: Education[] = educationData;
 
@@ -59,7 +59,7 @@ export function Education() {
       <div className="card">
         <div className="col">
           <h2>Education</h2>
-          <div className="container">
+          <div className="timeline">
             {data
               .sort((a: Education, b: Education) => b.id - a.id)
               .map((e: Education) => renderEducation(e))}

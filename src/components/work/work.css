@@ -4,8 +4,15 @@
   align-items: start;
 }
 
+.work-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .work-info {
-  width: 50%;
+  min-width: 20rem;
+  padding: 0 0.5rem 0.5rem 0;
 }
 
 .time {
@@ -27,6 +34,11 @@
   flex-direction: row;
   margin: 0.15rem 0;
   flex-wrap: wrap;
+}
+
+.achievements-container {
+  flex-basis: 30rem;
+  padding: 0 0.5rem 0.5rem 0;
 }
 
 .achievements {

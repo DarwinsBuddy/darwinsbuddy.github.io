@@ -9,8 +9,13 @@
   background-color: #1d1b1b;
 }
 
+.split-view {
+  flex-wrap: wrap;
+}
+
 .split-view-col {
-  max-width: 35%;
+  flex-basis: 35rem;
+  flex-grow: 1;
 }
 
 .content {

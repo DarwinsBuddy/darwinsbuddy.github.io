@@ -1,0 +1,38 @@
+.searchbox {
+	display: flex;
+	align-items: center;
+	position: relative;
+	max-width: 100%;
+    padding: 0.25rem;
+    background-color: #000000;
+    border:black 1px solid;
+    border-radius: 5px;
+}
+
+.searchbox > .icon {
+    font-size: 9pt;
+    padding: 2px 5px;  
+}
+
+.input {
+    font-size: 9pt;
+	padding: 3px 5px;
+	width: 100%;
+	padding-left: 10px;
+	outline: none;
+    border: unset;
+	transition: .3s ease;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.input:focus {
+    font-size: 9pt;
+	background: #313131;
+	border: 1px solid #5A7EC7;
+	border-radius: 5px;
+}
+
+.input::placeholder {
+	color: #DDDDDD;
+}

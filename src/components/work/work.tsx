@@ -1,6 +1,6 @@
-import "./Work.css";
-import workData from "../assets/work.json";
-import { renderAchievement, renderIf, renderLogo, renderTag } from "./utils";
+import "./work.css";
+import workData from "../../assets/work.json";
+import { renderAchievement, renderIf, renderLogo, renderTag } from "../utils";
 import {
   faMedal,
   faMicrochip,
@@ -161,22 +161,28 @@ function renderWork(work: Work): JSX.Element {
         className="timeline-card timeline-card-primary col card"
         key={work.id}
       >
-        <div className="timeline-head row">
-          <div className="col">
-            {renderLogo(work.company.logo, work.company.link, "5.5rem")}
-          </div>
-          <div className="col work-info">
-            <p className="title"><b>{work.company.name}</b></p>
-            <p className="location">{work.company.location}</p>
-            <p className="title"><b>{work.jobTitle}</b></p>
-            <p className="subTitle">{work.jobSubtitle}</p>
-            <div className="time">
-              <div className="years">{work.years}</div>
-              <div className="duration">{work.duration}</div>
+        <div className="timeline-head">
+          <div className="row">
+            <div className="col">
+              {renderLogo(work.company.logo, work.company.link, "5.5rem")}
             </div>
-          </div>
-          <div>
-            {renderAchievements(work.achievements)}
+            <div className="work-header">
+              <div className="col work-info">
+                <p className="title">
+                  <b>{work.company.name}</b>
+                </p>
+                <p className="location">{work.company.location}</p>
+                <p className="title">
+                  <b>{work.jobTitle}</b>
+                </p>
+                <p className="subTitle">{work.jobSubtitle}</p>
+                <div className="time">
+                  <div className="years">{work.years}</div>
+                  <div className="duration">{work.duration}</div>
+                </div>
+              </div>
+              <div className="achievements-container">{renderAchievements(work.achievements)}</div>
+            </div>
           </div>
         </div>
         <div className="timeline-body row">
@@ -196,15 +202,17 @@ function renderWork(work: Work): JSX.Element {
         className="timeline-card timeline-card-primary col card"
         key={work.id}
       >
-        <div className="timeline-head row">
-          <div className="col">
-            {renderLogo(work.logo, work.link, "5.5rem")}
-          </div>
-          <div className="col">
-            <p className="title">
-              <b>{work.title}</b>
-            </p>
-            <p>{work.subTitle}</p>
+        <div className="timeline-head">
+          <div className="row">
+            <div className="col">
+              {renderLogo(work.logo, work.link, "5.5rem")}
+            </div>
+            <div className="col">
+              <p className="title">
+                <b>{work.title}</b>
+              </p>
+              <p>{work.subTitle}</p>
+            </div>
           </div>
         </div>
         <div className="timeline-body row">
@@ -226,7 +234,7 @@ export function Work() {
     <div className="container">
       <div className="card">
         <div className="section">
-          <div className="col">        
+          <div className="col">
             <h2>Work Experience</h2>
             <div className="container">
               <div className="timeline">
