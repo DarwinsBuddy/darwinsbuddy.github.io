@@ -9,7 +9,7 @@ export function Header() {
       <div className="persona">
         <div className="portrait"></div>
         <div className="title-container">
-          <div className="header-title">DI Christoph Spörk, BSc, MSc</div>
+          <div className="header-title">DI Christoph Spörk BSc, MSc</div>
           <div className="header-sub-title">
             Product Owner | Data Scientist & Analyst | ML/AI Professional Lead
             Software Engineer | Technical Team Lead

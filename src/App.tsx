@@ -9,13 +9,15 @@ function App() {
     <div className="App">
       <Header />
       <div className="content">
+        <div className="row">
+          <AboutMe />
+        </div>
         <div className="split-view row">
-          <div className="col mt-1 split-view-col">
-            <AboutMe />
-            <Education />
+        <div className="col mt-1 split-view-col">
+            <Work />
           </div>
           <div className="col mt-1 split-view-col">
-            <Work />
+            <Education />
           </div>
         </div>
       </div>

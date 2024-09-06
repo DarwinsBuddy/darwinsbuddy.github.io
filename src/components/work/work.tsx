@@ -7,6 +7,7 @@ import {
   faPeopleRoof,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 
 const data: Work[] = workData;
 
@@ -229,7 +230,21 @@ function renderWork(work: Work): JSX.Element {
   }
 }
 
-export function Work() {
+function generateView(count: number) {
+  return data
+  .sort((a: Work, b: Work) => b.id - a.id)
+  .slice(0, count)
+  .map((w: Work) => renderWork(w));
+}
+
+export interface WorkProps {
+  count?: number;
+}
+
+export function Work(props: WorkProps) {
+
+  const [count, setCount] = useState(props.count || 5);
+
   return (
     <div className="container">
       <div className="card">
@@ -238,9 +253,13 @@ export function Work() {
             <h2>Work Experience</h2>
             <div className="container">
               <div className="timeline">
-                {data
-                  .sort((a: Work, b: Work) => b.id - a.id)
-                  .map((w: Work) => renderWork(w))}
+                {generateView(count)}
+                {renderIf(() => data.length > count,
+                  () => <div className="button-link">
+                      <a onClick={() => setCount(100)}>More...</a>
+                    </div>,
+                  () => <></>
+                )}
               </div>
             </div>
           </div>

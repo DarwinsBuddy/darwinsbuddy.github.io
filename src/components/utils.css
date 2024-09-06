@@ -24,7 +24,7 @@
 
 .achievement {
   margin: 1.5px;
-  border: 1px #dcdcdc solid;
+  
   border-radius: 2px;
   font-size: 10pt;
   padding: 0.5px 2px;
@@ -38,4 +38,13 @@
   font-size: 11pt;
   padding: 0.5px 2px;
   color: white;
+}
+
+
+.button-link {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  font-size: 15pt;
+  cursor: pointer;
 }
