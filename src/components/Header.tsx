@@ -16,13 +16,13 @@ export function Header() {
           </div>
         </div>
       </div>
-      <div className="contact">
-        <div>
+      <div className="contact row">
+        <div className="col">
           <h4>Address</h4>
           <p className="nowrap">Fontanastrasse 1 / 4 / 18</p>
           <p className="nowrap">1100 Vienna, Austria</p>
         </div>
-        <div>
+        <div className="col">
           <h4>Contact</h4>
           <p className="nowrap">
             <FontAwesomeIcon icon={faEnvelope} />{" "}

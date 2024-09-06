@@ -1,42 +1,41 @@
 .logo-container {
-  display:flex;
+  display: flex;
   align-items: center;
 }
 
 .logo {
-    min-width: 3.5rem;
-    min-height: 3.5rem;
-    margin-right: 0.5rem;
-    background-size: contain;
-    background-repeat: no-repeat;
-    box-shadow: 0px 0px 3px 3px var(--card-bg) inset;
-  }
-
+  min-width: 4.5rem;
+  min-height: 4.5rem;
+  margin-right: 0.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 0px 0px 6px 1px var(--bg) inset;
+}
 
 .tag {
   margin: 1.5px 1.5px;
-  background-color: #b4a3d7;
+  border: 1px #b4a3d7 solid;
   border-radius: 2px;
   padding: 0.5px 2px;
   font-size: 10pt;
-  color: black;
+  color: white;
   text-wrap: nowrap;
 }
 
 .achievement {
   margin: 1.5px;
-  background-color: #dcdcdc;
+  border: 1px #dcdcdc solid;
   border-radius: 2px;
-  font-size: 10pt; 
+  font-size: 10pt;
   padding: 0.5px 2px;
-  color: black;
+  color: white;
 }
 
 .activity {
   margin: 1.5px;
-  background-color: #9eb4ff;
+  border: 1px #9eb4ff solid;
   border-radius: 2px;
   font-size: 11pt;
   padding: 0.5px 2px;
-  color: black;
+  color: white;
 }

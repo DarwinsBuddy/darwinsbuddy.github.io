@@ -22,13 +22,17 @@ type Education = {
 
 function renderEducation(education: Education): JSX.Element {
   return (
-    <div className="card col" key={education.id}>
-      <div className="row">
+    <div
+      className="timeline-card timeline-card-secondary col card"
+      key={education.id}
+    >
+      <div className="timeline-head row">
         <div className="col">
-          {renderLogo(education.institute.logo, education.institute.link, "4.5rem")}
-          <div className="time">
-            <p>{education.years}</p>
-          </div>
+          {renderLogo(
+            education.institute.logo,
+            education.institute.link,
+            "5.5rem"
+          )}
         </div>
         <div className="col">
           <p className="title">
@@ -38,12 +42,12 @@ function renderEducation(education: Education): JSX.Element {
           <p>
             <b>{education.degree}</b>
           </p>
+          <div className="time">
+            <div className="years">{education.years}</div>
+          </div>
           <p>{education.info}</p>
           <p>{education.description}</p>
         </div>
-      </div>
-      <div className="row">
-        <div className="col"></div>
       </div>
     </div>
   );
@@ -51,14 +55,16 @@ function renderEducation(education: Education): JSX.Element {
 
 export function Education() {
   return (
-    <div className="col">
-      <div className="container">
-        <h3>Education</h3>
-      </div>
-      <div className="container">
-        {data
-          .sort((a: Education, b: Education) => b.id - a.id)
-          .map((e: Education) => renderEducation(e))}
+    <div className="container">
+      <div className="card">
+        <div className="col">
+          <h2>Education</h2>
+          <div className="container">
+            {data
+              .sort((a: Education, b: Education) => b.id - a.id)
+              .map((e: Education) => renderEducation(e))}
+          </div>
+        </div>
       </div>
     </div>
   );

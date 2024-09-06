@@ -4,12 +4,21 @@
   align-items: start;
 }
 
-.time {
-  padding: 0.125rem 0.125rem;
-  max-width: 5rem
+.work-info {
+  width: 50%;
 }
 
-.time > p {
+.time {
+  display: flex;
+  align-items: center;
+}
+
+.time > .years {
+  font-size: 9pt;
+  margin-right: 10px;
+}
+
+.time > .duration {
   font-size: 9pt;
 }
 
@@ -34,6 +43,10 @@
   flex-wrap: wrap;
 }
 
+.projects-container {
+  margin-left: 0.75rem;
+}
+
 .projects {
   margin-top: 0.25rem;
 }
@@ -45,6 +58,10 @@
 
 .title {
   font-size: large;
+}
+
+.location {
+  font-size: small;
 }
 
 .sub-title {

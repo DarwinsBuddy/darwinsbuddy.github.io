@@ -9,26 +9,28 @@
   background-color: #1d1b1b;
 }
 
+.split-view-col {
+  max-width: 35%;
+}
+
 .content {
-  margin: 20px 0;
+  margin: 0 1.5rem;
 }
 
 .container {
   margin: 0px auto;
+  margin: 10px 0;
   display: flex;
-  padding: 10px;
   flex-wrap: wrap;
 }
+
 .container .card {
-  background-color: var(--card-bg);
-  margin: 10px;
   padding: 10px;
   border-radius: 2px;
   font-size: 10px;
   color: #e0dddd;
   flex-grow: 1;
   flex-basis: 35rem;
-  box-shadow: 0px 0px 3px 3px var(--card-bg);
 }
 
 .row {

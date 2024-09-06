@@ -7,14 +7,23 @@ type AboutMe = {
 export function AboutMe() {
   return (
     <div className="container">
-      <div className="card" key="aboutMe">
+      <div className="card">
         <div className="details">
-          <h2>About Me</h2>
-          <p className="free-text">{aboutMeData.free}</p>
-          <h3>Hard skills</h3>
-          <p>{aboutMeData.hard}</p>
-          <h3>Soft skills</h3>
-          <p>{aboutMeData.soft}</p>
+          <div className="card">
+            <p className="free-text">{aboutMeData.free}</p>
+          </div>
+          <div className="card">
+            <div className="title">
+              <b>Hard skills</b>
+            </div>
+            <p>{aboutMeData.hard}</p>
+          </div>
+          <div className="card">
+            <div className="title">
+              <b>Soft skills</b>
+            </div>
+            <p>{aboutMeData.soft}</p>
+          </div>
         </div>
       </div>
     </div>

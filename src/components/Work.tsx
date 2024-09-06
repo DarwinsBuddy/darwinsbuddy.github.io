@@ -45,13 +45,15 @@ interface Employement extends Work {
   jobTitle: string;
   jobSubtitle?: string;
   scope?: string[];
-};
+}
 
 interface SelfEmployement extends Work {
+  link: string;
+  logo: string;
   title: string;
   subTitle: string;
   companies: Company[];
-};
+}
 
 function isEmployement(work: Work): work is Employement {
   return (work as Employement).type === WorkType.Employement;
@@ -72,7 +74,17 @@ function renderProjects(projects?: Project[], logoSize = "6rem") {
             </div>
             <div className="side">
               <p>
-                {renderIf(() => p.link, () => <a href={p.link} target="_blank"><b>{p.name}</b></a>, () => <b>{p.name}</b>)}
+                {renderIf(
+                  () => p.link,
+                  () => (
+                    <a href={p.link} target="_blank">
+                      <b>{p.name}</b>
+                    </a>
+                  ),
+                  () => (
+                    <b>{p.name}</b>
+                  )
+                )}
               </p>
               <p>{p.description}</p>
             </div>
@@ -88,8 +100,7 @@ function renderProjects(projects?: Project[], logoSize = "6rem") {
 function renderScope(scope?: string[]) {
   if (scope) {
     return (
-      <div className="section">
-        <hr className="m-1 smooth" />
+      <div className="">
         <h4>
           <FontAwesomeIcon icon={faPeopleRoof} /> Scope of Activities
         </h4>
@@ -110,8 +121,7 @@ function renderScope(scope?: string[]) {
 function renderAchievements(achievements?: string[]) {
   if (achievements) {
     return (
-      <div className="section">
-        <hr className="m-1 smooth" />
+      <div className="">
         <h4>
           <FontAwesomeIcon icon={faMedal} /> Achievements
         </h4>
@@ -130,8 +140,7 @@ function renderAchievements(achievements?: string[]) {
 function renderTech(tech?: string[]) {
   if (tech) {
     return (
-      <div className="section">
-        <hr className="m-1 smooth" />
+      <div className="">
         <h4>
           <FontAwesomeIcon icon={faMicrochip} /> Technology
         </h4>
@@ -148,45 +157,62 @@ function renderTech(tech?: string[]) {
 function renderWork(work: Work): JSX.Element {
   if (isEmployement(work)) {
     return (
-      <div className="card col" key={work.id}>
-        <div className="row">
+      <div
+        className="timeline-card timeline-card-primary col card"
+        key={work.id}
+      >
+        <div className="timeline-head row">
           <div className="col">
-            {renderLogo(work.company.logo, work.company.link, "4.5rem")}
+            {renderLogo(work.company.logo, work.company.link, "5.5rem")}
+          </div>
+          <div className="col work-info">
+            <p className="title"><b>{work.company.name}</b></p>
+            <p className="location">{work.company.location}</p>
+            <p className="title"><b>{work.jobTitle}</b></p>
+            <p className="subTitle">{work.jobSubtitle}</p>
             <div className="time">
-              <p>{work.years}</p>
-              <p>{work.duration}</p>
+              <div className="years">{work.years}</div>
+              <div className="duration">{work.duration}</div>
             </div>
           </div>
-          <div className="col">
-            <p className="title">
-              <b>{work.company.name}</b>
-            </p>
-            <p className="location">{work.company.location}</p>
-            <p>
-              <b>{work.jobTitle}</b>
-            </p>
-            <p>{work.jobSubtitle}</p>
+          <div>
+            {renderAchievements(work.achievements)}
           </div>
         </div>
-        <div className="row">
+        <div className="timeline-body row">
           <div className="col flex-grow-1">
             {renderProjects(work.projects)}
-            {renderScope(work.scope)}
-            {renderAchievements(work.achievements)}
-            {renderTech(work.tech)}
+            <div className="mt-1">
+              {renderScope(work.scope)}
+              {renderTech(work.tech)}
+            </div>
           </div>
         </div>
       </div>
     );
   } else if (isSelfEmployement(work)) {
     return (
-      <div className="card" key={work.id}>
-        <div className="content">
-          <p className="title">
-            <b>{work.title}</b>
-          </p>
-          <p>{work.subTitle}</p>
-          {renderProjects(work.projects, "3rem")}
+      <div
+        className="timeline-card timeline-card-primary col card"
+        key={work.id}
+      >
+        <div className="timeline-head row">
+          <div className="col">
+            {renderLogo(work.logo, work.link, "5.5rem")}
+          </div>
+          <div className="col">
+            <p className="title">
+              <b>{work.title}</b>
+            </p>
+            <p>{work.subTitle}</p>
+          </div>
+        </div>
+        <div className="timeline-body row">
+          <div className="col flex-grow-1">
+            <div className="projects-container">
+              {renderProjects(work.projects, "3rem")}
+            </div>
+          </div>
         </div>
       </div>
     );
@@ -197,14 +223,20 @@ function renderWork(work: Work): JSX.Element {
 
 export function Work() {
   return (
-    <div className="col">
-      <div className="container">
-        <h3>Work Experience</h3>
-      </div>
-      <div className="container">
-        {data
-          .sort((a: Work, b: Work) => b.id - a.id)
-          .map((w: Work) => renderWork(w))}
+    <div className="container">
+      <div className="card">
+        <div className="section">
+          <div className="col">        
+            <h2>Work Experience</h2>
+            <div className="container">
+              <div className="timeline">
+                {data
+                  .sort((a: Work, b: Work) => b.id - a.id)
+                  .map((w: Work) => renderWork(w))}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

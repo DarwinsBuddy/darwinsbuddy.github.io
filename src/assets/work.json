@@ -26,7 +26,7 @@
     "jobSubtitle": "Diploma project",
     "years": "2006/2007",
     "duration": "5 months",
-    "achievements": ["Development of a reporting tool for Bank Austria's SAS70 certification"]
+    "achievements": ["Release of a reporting tool for Bank Austria's SAS70 certification"]
   },
   {
     "id": 2,
@@ -55,13 +55,15 @@
         "description": "Consultation Compiler construction"
       }
     ],
-    "tech": ["bison", "yacc", "flex", "gcc", "C/C++"]
+    "tech": ["bison", "yacc", "flex", "gcc", "C/C++", "Haskell"]
   },
   {
     "id": 3,
     "type": "self-employement",
     "years": "2015 - 2016",
     "duration": "1.5 years",
+    "logo": "cs_small.png",
+    "link": "https://github.com/DarwinsBuddy",
     "title": "Self-Employeed",
     "subTitle": "Software Development & Consulting",
     "projects": [
@@ -299,7 +301,7 @@
       {
         "name": "Tipico Rewards",
         "link": "https://tinyurl.com/Tipico-Rewards",
-        "description": "Designing and implementing an industry defining product for real-time event-driven bonusing."
+        "description": "Designing and implementing an industry defining product for real-time event-driven bonusing"
       },
       {
         "name": "Product Management",
