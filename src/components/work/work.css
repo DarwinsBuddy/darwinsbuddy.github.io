@@ -35,12 +35,6 @@
   flex-wrap: wrap;
 }
 
-.achievements-container {
-  flex-basis: 15rem;
-  padding: 0 0.5rem 0.5rem 0;
-  flex: 1;
-}
-
 .achievements {
   display: flex;
   flex-direction: row;
@@ -60,7 +54,11 @@
 }
 
 .projects {
-  flex: 2;
+  flex: 1;
+}
+
+.job-description {
+  flex: 1;
   flex-basis: 15rem;
 }
 

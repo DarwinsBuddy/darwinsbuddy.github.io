@@ -13,6 +13,8 @@
   --card-bg: var(--bg);
   --link-color: #d9d9d9;
   --link-color-hover: #aaaed9;
+  --theme-button-bg: var(--header-bg-color);
+  --theme-button-fg: var(--fg-color);
 
   color: var(--fg-color);
   background-color: var(--bg-color);
@@ -65,6 +67,7 @@
   --timeline-point-size: 1.5rem;
   --timeline-point-hadjust: -1rem;
   --timeline-point-border: 3px solid;
+  --max-header-size: 15rem;
 }
 
 
@@ -90,6 +93,9 @@
 
 @media print {
   :root {
+
+    --max-header-size: 8rem;
+
     --font-xx-large: 12pt;
     --font-x-large: 10pt;
     --font-large: 8pt;
@@ -102,6 +108,9 @@
     --timeline-point-size: 0.7rem;
     --timeline-point-hadjust: -0.54rem;
     --timeline-point-border: 2px solid;
+
+    --theme-button-bg: var(--header-bg-color);
+    --theme-button-fg: var(--header-bg-color);
   }
 }
 

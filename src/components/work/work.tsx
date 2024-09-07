@@ -164,35 +164,34 @@ function renderWork(work: Work): JSX.Element {
         className="timeline-card timeline-card-primary col card pagebreak"
         key={work.id}
       >
-        <div className="timeline-head">
-          <div className="row">
-            <div className="col">
-              {renderLogo(work.company.logo, work.company.link)}
-            </div>
-            <div className="work-header">
-              <div className="col work-info">
-                <p className="title">
-                  <b>{work.company.name}</b>
-                </p>
-                <p className="location">{work.company.location}</p>
-                <p className="title">
-                  <b>{work.jobTitle}</b>
-                </p>
-                <p className="sub-title">{work.jobSubtitle}</p>
-                <div className="time">
-                  <div className="years">{work.years}</div>
-                  <div className="duration">{work.duration}</div>
+        <div className="timeline-head"></div>
+        <div className="timeline-body row">
+          <div className="job-description col">
+            <div className="row">
+              <div className="col">
+                {renderLogo(work.company.logo, work.company.link)}
+              </div>
+              <div className="work-header">
+                <div className="col work-info">
+                  <p className="title">
+                    <b>{work.company.name}</b>
+                  </p>
+                  <p className="location">{work.company.location}</p>
+                  <p className="title">
+                    <b>{work.jobTitle}</b>
+                  </p>
+                  <p className="sub-title">{work.jobSubtitle}</p>
+                  <div className="time">
+                    <div className="years">{work.years}</div>
+                    <div className="duration">{work.duration}</div>
+                  </div>
                 </div>
               </div>
-              <div className="achievements-container">
-                {renderAchievements(work.achievements)}
-              </div>
             </div>
+            {renderProjects(work.projects)}
           </div>
-        </div>
-        <div className="timeline-body row flex-wrap">
-          {renderProjects(work.projects)}
-          <div className="additional-info">
+          <div className="additional-info col">
+            {renderAchievements(work.achievements)}
             {renderScope(work.scope)}
             {renderTech(work.tech)}
           </div>

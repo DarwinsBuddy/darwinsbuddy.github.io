@@ -5,6 +5,7 @@
   display: flex;
   flex-direction: row;
   position: sticky;
+  max-height: var(--max-header-size);
   top: 0;
   box-shadow: var(--header-box-shadow);
   z-index: 2;
@@ -13,8 +14,8 @@
 .theme-button {
   display: flex;
   justify-content: center;
-  background-color: var(--header-bg-color);
-  color: var(--fg-color);
+  background-color: var(--theme-button-bg);
+  color: var(--theme-button-fg);
   align-items: center;
   max-height: 2rem;
   max-width: 2rem;
@@ -30,26 +31,26 @@
   display: flex;
   flex-direction: row;
   justify-content: start;
-  flex-grow: 5;
-  margin-top: 1rem;
+  flex: 4;
+  margin-top: 0.5rem;
   border-right: var(--fg-color) 1px solid;
 }
 
 .contact-container {
   justify-content: space-around;
   align-items: center;
-  flex-grow: 1;
+  flex: 1;
   flex-wrap: wrap;
 }
 
 .contact {
   width: 100%;
-  padding: 1rem;
+  padding: 0.25rem 0.5rem;
 }
 
 .address {
   width: 100%;
-  padding: 1rem;
+  padding: 0.25rem 0.5rem;
 }
 
 .title-container {

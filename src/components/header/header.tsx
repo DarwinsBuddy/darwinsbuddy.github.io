@@ -14,7 +14,6 @@ export function Header() {
   const [darkMode, setDarkMode] = useState(true);
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", darkMode ? "dark" : "light");
-    console.log("Switched theme", darkMode ? "dark" : "light");
   }, [darkMode]);
 
   return (

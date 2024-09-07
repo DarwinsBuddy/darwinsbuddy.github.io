@@ -30,7 +30,8 @@ function renderEducation(education: Education): JSX.Element {
         <div className="col">
           {renderLogo(
             education.institute.logo,
-            education.institute.link
+            education.institute.link,
+            "logo-sm"
           )}
         </div>
         <div className="col">
