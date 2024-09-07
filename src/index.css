@@ -200,6 +200,10 @@ body::-webkit-scrollbar-thumb {
   margin-top: 0.5rem;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .section {
   margin: 0 1rem;
 }

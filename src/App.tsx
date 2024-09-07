@@ -13,10 +13,10 @@ function App() {
           <AboutMe />
         </div>
         <div className="split-view row">
-        <div className="col mt-1 split-view-col">
+        <div className="col split-view-col">
             <Work />
           </div>
-          <div className="col mt-1 split-view-col">
+          <div className="col split-view-col">
             <Education />
           </div>
         </div>

@@ -146,7 +146,9 @@ function renderTech(tech?: string[]) {
           <FontAwesomeIcon icon={faMicrochip} /> Technology
         </h4>
         <div className="tech">
-          {tech.map((t: string, i: number) => renderTag(t, `${i}`, "tech", "tech"))}
+          {tech.map((t: string, i: number) =>
+            renderTag(t, `${i}`, "tech", "tech")
+          )}
         </div>
       </div>
     );
@@ -182,17 +184,17 @@ function renderWork(work: Work): JSX.Element {
                   <div className="duration">{work.duration}</div>
                 </div>
               </div>
-              <div className="achievements-container">{renderAchievements(work.achievements)}</div>
+              <div className="achievements-container">
+                {renderAchievements(work.achievements)}
+              </div>
             </div>
           </div>
         </div>
-        <div className="timeline-body row">
-          <div className="col flex-grow-1">
-            {renderProjects(work.projects)}
-            <div className="mt-1">
-              {renderScope(work.scope)}
-              {renderTech(work.tech)}
-            </div>
+        <div className="timeline-body row flex-wrap">
+          {renderProjects(work.projects)}
+          <div className="additional-info">
+            {renderScope(work.scope)}
+            {renderTech(work.tech)}
           </div>
         </div>
       </div>
@@ -205,9 +207,7 @@ function renderWork(work: Work): JSX.Element {
       >
         <div className="timeline-head">
           <div className="row">
-            <div className="col">
-              {renderLogo(work.logo, work.link)}
-            </div>
+            <div className="col">{renderLogo(work.logo, work.link)}</div>
             <div className="col">
               <p className="title">
                 <b>{work.title}</b>
@@ -232,9 +232,9 @@ function renderWork(work: Work): JSX.Element {
 
 function generateView(count: number) {
   return data
-  .sort((a: Work, b: Work) => b.id - a.id)
-  .slice(0, count)
-  .map((w: Work) => renderWork(w));
+    .sort((a: Work, b: Work) => b.id - a.id)
+    .slice(0, count)
+    .map((w: Work) => renderWork(w));
 }
 
 export interface WorkProps {
@@ -242,7 +242,6 @@ export interface WorkProps {
 }
 
 export function Work(props: WorkProps) {
-
   const [count, setCount] = useState(props.count || 100);
 
   return (
@@ -254,11 +253,16 @@ export function Work(props: WorkProps) {
             <div className="container">
               <div className="timeline">
                 {generateView(count)}
-                {renderIf(() => data.length > count,
-                  () => <div className="button-link">
+                {renderIf(
+                  () => data.length > count,
+                  () => (
+                    <div className="button-link">
                       <a onClick={() => setCount(100)}>More...</a>
-                    </div>,
-                  () => <></>
+                    </div>
+                  ),
+                  () => (
+                    <></>
+                  )
                 )}
               </div>
             </div>

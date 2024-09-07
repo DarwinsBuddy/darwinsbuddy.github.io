@@ -11,7 +11,7 @@
 }
 
 .work-info {
-  min-width: 20rem;
+  flex-basis: 20rem;
   padding: 0 0.5rem 0.5rem 0;
 }
 
@@ -36,8 +36,9 @@
 }
 
 .achievements-container {
-  flex-basis: 30rem;
+  flex-basis: 15rem;
   padding: 0 0.5rem 0.5rem 0;
+  flex: 1;
 }
 
 .achievements {
@@ -59,12 +60,18 @@
 }
 
 .projects {
-  margin-top: 0.25rem;
+  flex: 2;
+  flex-basis: 15rem;
+}
+
+.additional-info {
+  flex: 1;
+  flex-basis: 15rem;
 }
 
 .project {
   display: flex;
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
 }
 
 .title {
