@@ -206,6 +206,7 @@
         "description": "Software Architect, DevOps, Technical Lead, Development, etc."
       }
     ],
+    "achievements": ["Launching a customer-facing SCR web-platform to react on fast-paced busienss developments"],
     "scope": ["Development", "CI", "Testing", "Team Leadership", "Backup Strategy", "Coding Guidelines", "Toolset Development", "Development Workflow", "Release Process", "Agile"],
     "tech": ["Python", "Scala", "Spark", "Angular", "PostgreSQL", "GCP", "Kubernetes", "Clean Coding", "Mathematical Modelling", "git-flow", "JIRA", "Typescript"]
   },
@@ -235,6 +236,7 @@
         "description": "As a side project developing/extending a full stack solution for goal tracking of a company-wide used foosball table. Enabled by this doing yearly statistical analysis on employees performance in foosball to boost confidence and promote healthy breaks and an inviting work atmosphere."
       }
     ],
+    "achievements": ["Developing a service for compliantly excluding players, reducing throughput time for adaptions drastically"],
     "scope": ["Development", "CI", "Testing", "Root Cause Analaysis", "Interpersonal Communication", "Research", "Solution Design", "Clean Coding", "Release Process", "Rapid"],
     "tech": ["Python", "Java", "Docker", "Podman", "Angular", "MongoDB", "AWS", "Vert.x", "Typescript", "Nomad", "Consul", "RxJava", "Apache Ignite", "Microservices"]
   },
