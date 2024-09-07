@@ -9,7 +9,7 @@
   margin-right: 0.5rem;
   background-size: contain;
   background-repeat: no-repeat;
-  box-shadow: 0px 0px 6px 1px var(--bg) inset;
+  box-shadow: 0px 0px 6px 1px var(--bg-color) inset;
 }
 
 .tag {
@@ -17,27 +17,40 @@
   border: 1px #b4a3d7 solid;
   border-radius: 2px;
   padding: 0.5px 2px;
-  font-size: 10pt;
-  color: white;
+  font-size: var(--font-medium);
+  color: var(--fg-color);
   text-wrap: nowrap;
+  user-select: none;
+}
+
+.tag-neutral {
+  border-color: var(--neutral);
+}
+
+.tag-primary {
+  border-color: var(--primary);
+}
+
+.tag-secondary {
+  border-color: var(--secondary);
 }
 
 .achievement {
   margin: 1.5px;
   
   border-radius: 2px;
-  font-size: 10pt;
+  font-size: var(--font-medium);
   padding: 0.5px 2px;
-  color: white;
+  color: var(--fg-color);
 }
 
 .activity {
   margin: 1.5px;
   border: 1px #9eb4ff solid;
   border-radius: 2px;
-  font-size: 11pt;
+  font-size: var(--font-medium);
   padding: 0.5px 2px;
-  color: white;
+  color: var(--fg-color);
 }
 
 
@@ -45,6 +58,6 @@
   display: flex;
   justify-content: center;
   padding: 5px;
-  font-size: 15pt;
+  font-size: var(--font-large);
   cursor: pointer;
 }

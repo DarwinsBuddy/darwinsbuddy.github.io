@@ -1,5 +1,28 @@
 {
-    "free": "As a long-lasting IT and Computer Science enthusiast, driven by my autodidactic learning skill, I strive to gain knowledge in various technical-related fields and love to apply it to nowaday's problems. I thrive working closely with others sharing a common goal and learn from everday challenges by self-reflection. I do not define my programming skills by the amount of mastered languages or comprehended frameworks, but by my capability and compulsion to interconnect them based on their individual assets and drawbacks. My day-to-day attitude to problems and challenges is: When you do it, you do it right",
-    "hard": "Product owner, Lead Developer and passionate Data Scientist with experience in web-development/microservice/IoT architecture, NLP and Computer Vision innovative and business oriented thinker and implementer",
-    "soft": "Critical thinker, empathetic, analytical, thought leader, solution-oriented, interested in sustainable results, healthy atmosphere and a positive error culture"
+  "free": "As a long-lasting IT and Computer Science enthusiast, driven by my autodidactic learning skill, I strive to gain knowledge in various technical-related fields and love to apply it to nowaday's problems. I thrive working closely with others sharing a common goal and learn from everday challenges by self-reflection. I do not define my programming skills by the amount of mastered languages or comprehended frameworks, but by my capability and compulsion to interconnect them based on their individual assets and drawbacks. My day-to-day attitude to problems and challenges is: When you do it, you do it right",
+  "hard": [
+    "Product owner",
+    "Lead Developer",
+    "Data Scientist",
+    "Algorithmics",
+    "ML/AI",
+    "Mathematics",
+    "Development",
+    "Microservice architecture",
+    "IoT architecture",
+    "NLP",
+    "Computer Vision",
+    "Innovative thinker",
+    "Business oriented"
+  ],
+  "soft": [
+    "Critical thinker",
+    "empathetic",
+    "analytical",
+    "thought leader",
+    "solution-oriented",
+    "thriving for sustainable results",
+    "healthy atmosphere",
+    "positive error culture"
+  ]
 }

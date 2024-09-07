@@ -38,9 +38,9 @@ export function renderIf(predicate: () => any, thenRender: () => any, elseRender
   }
 }
 
-export function renderTag(tag: string, id: string) {
+export function renderTag(tag: string, id: string, classes?: string, keyPrefix?: string) {
   return (
-    <div className="tag" key={`tech-${id}.${tag}`}>
+    <div className={`tag ${classes || ""}`} key={`${keyPrefix || 'tag'}-${id}.${tag}`}>
       {tag}
     </div>
   );

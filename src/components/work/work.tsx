@@ -146,7 +146,7 @@ function renderTech(tech?: string[]) {
           <FontAwesomeIcon icon={faMicrochip} /> Technology
         </h4>
         <div className="tech">
-          {tech.map((t: string, i: number) => renderTag(t, `${i}`))}
+          {tech.map((t: string, i: number) => renderTag(t, `${i}`, "tech", "tech"))}
         </div>
       </div>
     );
@@ -176,7 +176,7 @@ function renderWork(work: Work): JSX.Element {
                 <p className="title">
                   <b>{work.jobTitle}</b>
                 </p>
-                <p className="subTitle">{work.jobSubtitle}</p>
+                <p className="sub-title">{work.jobSubtitle}</p>
                 <div className="time">
                   <div className="years">{work.years}</div>
                   <div className="duration">{work.duration}</div>
@@ -243,7 +243,7 @@ export interface WorkProps {
 
 export function Work(props: WorkProps) {
 
-  const [count, setCount] = useState(props.count || 5);
+  const [count, setCount] = useState(props.count || 100);
 
   return (
     <div className="container">

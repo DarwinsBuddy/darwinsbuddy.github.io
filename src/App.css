@@ -4,9 +4,8 @@
   box-sizing: border-box;
 }
 .App {
-  background: #ffffff;
   height: 100%;
-  background-color: #1d1b1b;
+  background-color: var(--bg);
 }
 
 .split-view {
@@ -19,7 +18,7 @@
 }
 
 .content {
-  margin: 0 1.5rem;
+  margin: 1.5rem;
 }
 
 .container {
@@ -32,8 +31,7 @@
 .container .card {
   padding: 10px;
   border-radius: 2px;
-  font-size: 10px;
-  color: #e0dddd;
+  color: var(--fg);
   flex-grow: 1;
   flex-basis: 35rem;
 }
@@ -65,10 +63,6 @@
 .section {
   padding: 0 2px 2px 0;
   width: 100%;
-}
-
-.section h4 {
-  color:rgb(150, 150, 150)
 }
 
 .m-1 {

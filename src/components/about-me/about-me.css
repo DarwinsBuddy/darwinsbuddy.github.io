@@ -1,3 +1,31 @@
+.aboutme {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .free-text {
+    display: flex;
+    padding: 0 0.5rem;
+    flex: 2.5;
+}
+
+.free-text p {
     line-break: normal;
+    font-size: var(--font-large);
+}
+
+.skills {
+    display: flex;
+    justify-content: start;
+    flex: 1;
+    padding: 0 0.5rem;
+}
+
+.skill-container p {
+    font-size: var(--font-large);
+}
+
+.skill-tags {
+    flex-wrap: wrap;
+    justify-content: safe;
 }

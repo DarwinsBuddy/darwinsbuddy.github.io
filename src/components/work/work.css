@@ -21,18 +21,17 @@
 }
 
 .time > .years {
-  font-size: 9pt;
+  font-size: var(--font-small);
   margin-right: 10px;
 }
 
 .time > .duration {
-  font-size: 9pt;
+  font-size: var(--font-small);
 }
 
 .tech {
   display: flex;
   flex-direction: row;
-  margin: 0.15rem 0;
   flex-wrap: wrap;
 }
 
@@ -69,14 +68,14 @@
 }
 
 .title {
-  font-size: large;
+  font-size: var(--font-large);
 }
 
 .location {
-  font-size: small;
+  font-size: var(--font-medium);
 }
 
 .sub-title {
-  font-size: medium;
+  font-size: var(--font-large);
   word-wrap: break-word;
 }

@@ -1,9 +1,22 @@
 import "./header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEnvelope,
+  faMoon,
+  faPhone,
+  faSun,
+} from "@fortawesome/free-solid-svg-icons";
+import { renderIf } from "../utils";
+import { useEffect, useState } from "react";
 
 export function Header() {
+  const [darkMode, setDarkMode] = useState(true);
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", darkMode ? "dark" : "light");
+    console.log("Switched theme", darkMode ? "dark" : "light");
+  }, [darkMode]);
+
   return (
     <div className="header">
       <div className="persona">
@@ -14,11 +27,9 @@ export function Header() {
             Product Owner | Data Scientist & Analyst | ML/AI Professional Lead
             Software Engineer | Technical Team Lead
           </div>
-          {
-            /*<div className="input-container">
+          {/*<div className="input-container">
               <SearchBox></SearchBox>
-            </div>*/
-          }
+            </div>*/}
         </div>
       </div>
       <div className="contact-container row">
@@ -46,6 +57,19 @@ export function Header() {
             </a>
           </p>
         </div>
+      </div>
+      <div className="row">
+        <button className="theme-button" onClick={() => setDarkMode(!darkMode)}>
+          {renderIf(
+            () => darkMode,
+            () => (
+              <FontAwesomeIcon icon={faSun}></FontAwesomeIcon>
+            ),
+            () => (
+              <FontAwesomeIcon icon={faMoon}></FontAwesomeIcon>
+            )
+          )}
+        </button>
       </div>
     </div>
   );

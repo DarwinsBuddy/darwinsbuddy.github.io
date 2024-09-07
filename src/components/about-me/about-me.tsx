@@ -1,4 +1,6 @@
+import "./about-me.css";
 import aboutMeData from "../../assets/aboutme.json";
+import { renderTag } from "../utils";
 type AboutMe = {
   free: number;
   hard: string;
@@ -6,23 +8,25 @@ type AboutMe = {
 };
 export function AboutMe() {
   return (
-    <div className="container">
-      <div className="card">
-        <div className="details">
-          <div className="card">
-            <p className="free-text">{aboutMeData.free}</p>
+    <div className="aboutme col">
+      <div className="free-text col">
+        <p>{aboutMeData.free}</p>
+      </div>
+      <div className="skills col">
+        <div className="skill-container">
+          <p><b>Hard skills</b></p>
+          <div className="row skill-tags">
+            {aboutMeData.hard.map((t, i) =>
+              renderTag(t, `${i}`, "tag-neutral", "hard")
+            )}
           </div>
-          <div className="card">
-            <div className="title">
-              <b>Hard skills</b>
-            </div>
-            <p>{aboutMeData.hard}</p>
-          </div>
-          <div className="card">
-            <div className="title">
-              <b>Soft skills</b>
-            </div>
-            <p>{aboutMeData.soft}</p>
+        </div>
+        <div className="skill-container">
+          <p><b>Soft skills</b></p>
+          <div className="row skill-tags">
+            {aboutMeData.soft.map((t, i) =>
+              renderTag(t, `${i}`, "tag-neutral", "soft")
+            )}
           </div>
         </div>
       </div>
