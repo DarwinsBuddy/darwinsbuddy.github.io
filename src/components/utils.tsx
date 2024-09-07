@@ -3,17 +3,15 @@ import "./utils.css";
 export function renderLogo(
   logo?: string,
   link?: string,
-  size: string = "3.5rem"
+  logoClass: string = "logo-md"
 ) {
   if (logo) {
     function _logo() {
       return (
         <div
-          className="logo"
+          className={`logo ${logoClass}`}
           style={{
-            backgroundImage: `url('${logo}')`,
-            minWidth: size,
-            minHeight: size,
+            backgroundImage: `url('${logo}')`
           }}
         ></div>
       );

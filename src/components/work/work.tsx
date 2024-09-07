@@ -64,14 +64,14 @@ function isSelfEmployement(work: Work): work is SelfEmployement {
   return (work as SelfEmployement).type === WorkType.SelfEmployement;
 }
 
-function renderProjects(projects?: Project[], logoSize = "6rem") {
+function renderProjects(projects?: Project[], logoClass: string = "") {
   if (projects) {
     return (
       <div className="projects">
         {projects.map((p: Project, i: number) => (
           <div className="project" key={`project-${i}.${p.name}`}>
             <div className="side">
-              {renderLogo(p.company?.logo, p.link, logoSize)}
+              {renderLogo(p.company?.logo, p.link, logoClass)}
             </div>
             <div className="side">
               <p>
@@ -159,13 +159,13 @@ function renderWork(work: Work): JSX.Element {
   if (isEmployement(work)) {
     return (
       <div
-        className="timeline-card timeline-card-primary col card"
+        className="timeline-card timeline-card-primary col card pagebreak"
         key={work.id}
       >
         <div className="timeline-head">
           <div className="row">
             <div className="col">
-              {renderLogo(work.company.logo, work.company.link, "5.5rem")}
+              {renderLogo(work.company.logo, work.company.link)}
             </div>
             <div className="work-header">
               <div className="col work-info">
@@ -206,7 +206,7 @@ function renderWork(work: Work): JSX.Element {
         <div className="timeline-head">
           <div className="row">
             <div className="col">
-              {renderLogo(work.logo, work.link, "5.5rem")}
+              {renderLogo(work.logo, work.link)}
             </div>
             <div className="col">
               <p className="title">
@@ -219,7 +219,7 @@ function renderWork(work: Work): JSX.Element {
         <div className="timeline-body row">
           <div className="col flex-grow-1">
             <div className="projects-container">
-              {renderProjects(work.projects, "3rem")}
+              {renderProjects(work.projects, "logo-sm")}
             </div>
           </div>
         </div>

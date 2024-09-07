@@ -8,7 +8,7 @@
   --fg-color: rgba(255, 255, 255, 0.87);
   --header-bg-color: rgb(0,0,0);
   --header-box-shadow: 0px 2px 10px 2px rgba(0,0,0,1.0);
-  --logo-box-shadow: 0px 0px 6px 1px rgba(0,0,0) inset;
+  --logo-box-shadow: 0px 0px 0.25rem 1px rgba(0,0,0) inset;
   --bg-color: #242424;
   --card-bg: var(--bg);
   --link-color: #d9d9d9;
@@ -54,10 +54,17 @@
   --white: #fff;
   --black: #000;
 
-  --font-x-large: 2rem;
+  --font-xx-large: 2rem;
+  --font-x-large: 1.5rem;
   --font-large: 1rem;
   --font-medium: 0.85rem;
   --font-small: 0.75rem;
+  --portrait-size: 10rem;
+  --logo-md: 5.5rem;
+  --logo-sm: 3rem;
+  --timeline-point-size: 1.5rem;
+  --timeline-point-hadjust: -1rem;
+  --timeline-point-border: 3px solid;
 }
 
 
@@ -66,17 +73,35 @@
   --bg-color: #ffffffde;
   --header-bg-color: rgb(208, 208, 208);
   --header-box-shadow: 0px 10px 10px 2px rgba(208, 208, 208,1.0);
-  --logo-box-shadow: 0px 0px 6px 1px rgba(208, 208, 208) inset;
+  --logo-box-shadow: 0px 0px  0.25rem 1px rgba(208, 208, 208) inset;
   --link-color: #3e3e3e;
   --link-color-hover: #2d2d74;
 }
 
 @media only screen and (max-width: 750px) {
   :root {
-    --font-x-large: 2rem;
-    --font-large: 1rem;
+    --font-xx-large: 1.5rem;
+    --font-x-large: 1rem;
+    --font-large: 0.85rem;
     --font-medium: 0.75rem;
     --font-small: 0.75rem;
+  }
+}
+
+@media print {
+  :root {
+    --font-xx-large: 12pt;
+    --font-x-large: 10pt;
+    --font-large: 8pt;
+    --font-medium: 6pt;
+    --font-small: 5pt;
+
+    --portrait-size: 5rem;
+    --logo-md: 2.5rem;
+    --logo-sm: 2rem;
+    --timeline-point-size: 0.7rem;
+    --timeline-point-hadjust: -0.54rem;
+    --timeline-point-border: 2px solid;
   }
 }
 
@@ -106,8 +131,16 @@ hr.smooth {
 }
 
 h1 {
-  font-size: var(--font-x-large);
+  font-size: var(--font-xx-large);
   line-height: 1.1;
+}
+
+h2 {
+  font-size: var(--font-x-large)
+}
+
+h3 {
+  font-size: var(--font-large)
 }
 
 button {
@@ -184,11 +217,11 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   background-color: #fff;
   border-radius: 100%;
-  width: 22px;
-  height: 22px;
+  width: var(--timeline-point-size);
+  height: var(--timeline-point-size);
   top: 1rem;
-  left: -15px;
-  border: 3px solid;
+  left: var(--timeline-point-hadjust);
+  border: var(--timeline-point-border);
 }
 
 .timeline-head {
@@ -213,4 +246,8 @@ body::-webkit-scrollbar-thumb {
 
 .timeline-card-success:before {
   border-color: var(--teal)
+}
+
+.pagebreak {
+  page-break-inside: avoid;
 }

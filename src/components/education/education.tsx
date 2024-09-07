@@ -30,8 +30,7 @@ function renderEducation(education: Education): JSX.Element {
         <div className="col">
           {renderLogo(
             education.institute.logo,
-            education.institute.link,
-            "5.5rem"
+            education.institute.link
           )}
         </div>
         <div className="col">
@@ -58,11 +57,15 @@ export function Education() {
     <div className="container">
       <div className="card">
         <div className="col">
-          <h2>Education</h2>
-          <div className="timeline">
-            {data
-              .sort((a: Education, b: Education) => b.id - a.id)
-              .map((e: Education) => renderEducation(e))}
+          <div className="section">
+            <h2>Education</h2>
+            <div className="container">
+              <div className="timeline">
+                {data
+                  .sort((a: Education, b: Education) => b.id - a.id)
+                  .map((e: Education) => renderEducation(e))}
+              </div>
+            </div>
           </div>
         </div>
       </div>

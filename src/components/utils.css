@@ -4,12 +4,20 @@
 }
 
 .logo {
-  min-width: 4.5rem;
-  min-height: 4.5rem;
   margin-right: 0.5rem;
   background-size: contain;
   background-repeat: no-repeat;
   box-shadow: var(--logo-box-shadow);
+}
+
+.logo-md {
+  min-width: var(--logo-md);
+  min-height: var(--logo-md);
+}
+
+.logo-sm {
+  min-width: var(--logo-sm);
+  min-height: var(--logo-sm);
 }
 
 .tag {

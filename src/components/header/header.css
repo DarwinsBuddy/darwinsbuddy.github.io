@@ -75,8 +75,8 @@
   margin: 0.5rem;
   background: url('/portrait.png') no-repeat;
   background-size: contain;
-  min-height: 10rem;
-  min-width: 10rem;
+  min-height: var(--portrait-size);
+  min-width: var(--portrait-size);
   box-shadow: inset 0px 0px 50px 40px rgba(var(--bg-color), 0.75);
 }
 

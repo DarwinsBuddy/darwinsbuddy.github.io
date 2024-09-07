@@ -55,7 +55,7 @@
 }
 
 .projects-container {
-  margin-left: 0.75rem;
+  margin-left: calc(var(--logo-md) / 5);
 }
 
 .projects {
