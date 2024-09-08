@@ -1,0 +1,45 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-x-large);
+    width:100vw;
+    height:15rem;
+}
+
+.msg-box {
+    height: 2rem;
+}
+
+
+input.password-input {
+    font-size: var(--font-x-large);
+    animation:cubic-bezier(0.6, -0.28, 0.735, 0.045);
+	padding: 3px 5px;
+	width: 100%;
+	padding-left: 10px;
+	outline: none;
+    border: unset;
+	transition: .3s ease;
+    background: #7c7c7c;
+    border: 1px solid rgb(167, 167, 167);
+    border-radius: 2px;
+}
+
+.password-input:focus {
+    font-size: var(--font-x-large);
+	background: #bebebe;
+	border: 1px solid #342160;
+	border-radius: 2px;
+}
+
+.password-input::placeholder {
+	color: #DDDDDD;
+}
+
+button.login-button {
+    background-color: #b0b0b0;
+    border-color: 1px solid #342160;
+    border-radius: 2px;
+    padding: 0.45rem 1.2em;
+}
